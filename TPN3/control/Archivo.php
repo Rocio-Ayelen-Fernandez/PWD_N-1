@@ -26,7 +26,7 @@ class Archivo
         // echo 'Ruta completa: ' . $dir . '<br>';
 
         $archivo = $array['miArchivo'];
-        $tipoPermitido = ['text/plain'];
+        $tipoPermitido = ['application/msword', 'application/pdf'];
         $tamanoMaximo = 2 * 1024 * 1024; // 2MB en bytes
 
         // Verificar si el archivo tiene un tipo permitido

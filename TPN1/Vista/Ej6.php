@@ -23,7 +23,7 @@ que procesa el formulario la cantidad de deportes que practica.</p>
                 <input type="text" id="apellido" name="apellido" size="15" required><br>
 
                 <label for="edad">Edad</label>
-                <input type="text" id="edad" name="edad" size="15" required><br>
+                <input type="number" id="edad" name="edad" size="15" required><br>
 
                 <label for="direccion">Direccion</label>
                 <input type="text" id="direccion" name="direccion" size="15" required><br>

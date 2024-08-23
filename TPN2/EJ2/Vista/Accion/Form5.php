@@ -5,8 +5,8 @@ include_once '../../Control/Persona.php';
 include_once '../../Control/GeneroYEstudios.php';
 
 $datos = darDatosSubmitted();
-$persona = new Persona($datos);
-$mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido().".Tengo ". $persona->getEdad(). " y vivo en ". $persona->getDireccion() . "Mi género es ".$persona->getGenero(). " y mi nivel de estudios es ". $persona->getEstudios();
+$persona = new GeneroYEstudios($datos);
+$mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido().".<br>Tengo ". $persona->getEdad(). " y vivo en ". $persona->getDireccion() . "<br>Mi género es ".$persona->getGenero(). " y mi nivel de estudios es ". $persona->getEstudios();
 
 
 ?>

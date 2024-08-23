@@ -7,7 +7,7 @@
 	<title>Menu de Tps</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="cssMenu/menu.css">
+	<link rel="stylesheet" href="/cssMenu/menu.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,45 +26,50 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="menuTpUno col-md-4">
-				<h2 class="h2 text-primary"> <a href="Aca va el pdfm">TP N° 1 - HTML-PHP</a></h2>
+				<h2 class="h2 text-primary"> <a href="https://github.com/enzomolina10/unco/blob/main/Tps%20PWD/Consignas/TP1_PHPHTML_20.pdf" target="_blank">TP N° 1 - HTML-PHP</a></h2>
 				<h3 class="h3 text-secondary">Ejercicios</h3>
-							<ul class="list-group">
-						<li class="list-group-item">
-							<a href="#">Ejercicio 1</a>
-							<ul class="list-group">
-								<li class="list-group-item"><a href="#">Ejercicio 1.1</a></li>
-								<li class="list-group-item"><a href="#">Ejercicio 1.2</a></li>
-								<li class="list-group-item"><a href="#">Ejercicio 1.3</a></li>
-								<li class="list-group-item"><a href="#">Ejercicio 1.4</a></li>
-								<li class="list-group-item"><a href="#">Ejercicio 1.5</a></li>
-								<li class="list-group-item"><a href="#">Ejercicio 1.6</a></li>
-								<li class="list-group-item"><a href="#">Ejercicio 1.7</a></li>
-								<li class="list-group-item"><a href="#">Ejercicio 1.8</a></li>
-							</ul>
-						</li>
-						<li class="list-group-item"><a href="#">Ejercicio 2</a></li>
-						<li class="list-group-item"><a href="#">Ejercicio 3</a></li>
-						<li class="list-group-item"><a href="#">Ejercicio 4</a></li>
-					</ul>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej1.php">Ejercicio 1</a></li>
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej2.php">Ejercicio 2</a></li>
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej3.php">Ejercicio 3</a></li>
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej4.php">Ejercicio 4</a></li>
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej5.php">Ejercicio 5</a></li>
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej6.php">Ejercicio 6</a></li>
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej7.php">Ejercicio 7</a></li>
+					<li class="list-group-item"><a href="../tpRocio/TPN1/Vista/Ej8.php">Ejercicio 8</a></li>
+				</ul>
 			</div>
 			<div class="menuTpDos col-md-4">
-				<h2 class="h2 text-primary"><a href="Aca va el pdf">TP N° 2 - Validación de Formularios / Bootstrap</a></h2>
+				<h2 class="h2 text-primary"><a href="https://github.com/enzomolina10/unco/blob/main/Tps%20PWD/Consignas/TP2_Validacion_BootStrap_20.pdf" target="_blank">TP N° 2 - Validación de Formularios / Bootstrap</a></h2>
 				<h3 class="h3 text-secondary">Ejercicios</h3>
 				<ul class="list-group">
-					<li class="list-group-item"><a href="#">Ejercicio 1</a></li>
-					<li class="list-group-item"><a href="#">Ejercicio 2</a></li>
-					<li class="list-group-item"><a href="#">Ejercicio 3</a></li>
-					<li class="list-group-item"><a href="#">Ejercicio 4</a></li>
-				</ul>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<a href="#">Ejercicio 2 (Tp 1)</a>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 1</a></li>
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 2</a></li>
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 3</a></li>
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 4</a></li>
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 5</a></li>
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 6</a></li>
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 7</a></li>
+								<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php">Ejercicio 8</a></li>
+							</ul>
+						</li>
+						<li class="list-group-item"><a href="../tpRocio/TPN2/Vista/ejer3.php"">Ejercicio 3</a></li>
+						<li class=" list-group-item"><a href="../tpRocio/TPN2/Vista/ejer4.php"">Ejercicio 4</a></li>
+					</ul>
+
 			</div>
-			<div class="menuTpTres col-md-4">
-				<h2 class="h2 text-primary"><a href="/TPN3/TP3_SubirArchivos.pdf">TP N° 3 - Subir Archivos</a></h2>
-				<h3 class="h3 text-secondary">Ejercicios</h3>
-				<ul class="list-group">
-					<li class="list-group-item"><a href=" #">Ejercicio 1</a></li>
-					<li class="list-group-item"><a href="#">Ejercicio 2</a></li>
-					<li class="list-group-item"><a href="#">Ejercicio 3</a></li>
-				</ul>
+			<div class=" menuTpTres col-md-4">
+									<h2 class="h2 text-primary"><a href="https://github.com/enzomolina10/unco/blob/main/Tps%20PWD/Consignas/TP3_SubirArchivos.pdf" target="_blank">TP N° 3 - Subir Archivos</a></h2>
+									<h3 class="h3 text-secondary">Ejercicios</h3>
+									<ul class="list-group">
+										<li class="list-group-item"><a href="../tpRocio/TPN3/vista/EJ1/">Ejercicio 1</a></li>
+										<li class="list-group-item"><a href="../tpRocio/TPN3/vista/EJ1/">Ejercicio 2</a></li>
+										<li class="list-group-item"><a href="../tpRocio/TPN3/vista/EJ1/">Ejercicio 3</a></li>
+									</ul>
 			</div>
 		</div>
 	</div>

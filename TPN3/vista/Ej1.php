@@ -11,7 +11,7 @@
     controlar, antes de guardar el archivo, que los tipos validos son .doc o pdf y además el tamaño
     máximo permitido es de 2mb. En caso que se cumplan las condiciones mostrar un link al archivo
     cargado, en caso contrario mostrar un mensaje indicando el problema.</p>
-    <form method="post" action="respuesta.php" enctype="multipart/form-data">
+    <form method="post" action="accion/Ej1.php" enctype="multipart/form-data">
         Ingresa el archivo: <input name="miArchivo" id="miArchivo" type="file" />
         <input type="submit" value="Enviar"/>
     </form>

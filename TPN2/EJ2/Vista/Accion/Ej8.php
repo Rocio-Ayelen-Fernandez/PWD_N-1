@@ -1,13 +1,12 @@
 <?php
 
-include_once "../../../utils/funciones.php";
-include_once "../../Control/Persona.php";
+include_once "../../../../utils/funciones.php";
 include_once "../../Control/Boleto.php";
 
 $datos = darDatosSubmitted();
 
 $boleto = new Boleto($datos);
-$valorBoleto = $obj->calcularBoleto();
+$valorBoleto = $boleto->calcularBoleto();
 ?>
 
 <!DOCTYPE html>

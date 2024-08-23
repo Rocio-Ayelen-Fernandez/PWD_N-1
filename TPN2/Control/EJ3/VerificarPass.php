@@ -22,9 +22,9 @@ class VerificaPass
 	{
 		// Usuarios precargados
 		$usuariosPrecargados = [
-			["usuario" => "enzooooo", "clave" => 12345678],
-			["usuario" => "gallardo", "clave" => 11111111],
-			["usuario" => "huevoooo", "clave" => 22222222]
+			["usuario" => "enzooooo", "clave" => "12345678a"],
+			["usuario" => "gallardo", "clave" => "11111111a"],
+			["usuario" => "huevoooo", "clave" => "22222222"]
 		];
 		$existe = false;
 		$contador = 0;

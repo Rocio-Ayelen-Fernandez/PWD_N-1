@@ -17,6 +17,7 @@
 </head>
 
 <body>
+	<?php include_once "Estructura/header.php";?>
 	<div class="container" id="contenedor">
 		<header>
 			<div class="col-12">
@@ -24,7 +25,7 @@
 			</div>
 		</header>
 		<div class="contenedorDos">
-			<form class="row g-3 needs-validation" novalidate action="Action\ejer4vol2.php" method="get">
+			<form class="row g-3 needs-validation" novalidate action="accion/Ej3.php" method="post" enctype="multipart/form-data">
 				<div class="col-6">
 					<label class="form-label" for="validationCustom01">Titulo</label>
 					<input type="text" class="form-control" id="validationCustom01" name="Titulo" required>
@@ -127,7 +128,7 @@
 				</div>
 				<div class="col-12">
 					<div class="form-check input-group mb-3">
-					<input type="file" class="form-control" id="inputGroupFile02" required>
+					<input type="file" class="form-control" id="inputGroupFile02" name="thumbnail" required>
 					<label class="input-group-text" for="inputGroupFile02">Enviar</label>
 					<div class="invalid-feedback">
 						Este campo es obligatorio.
@@ -166,6 +167,7 @@
 			})()
 
 	</script>
+	<?php include_once "Estructura/footer.php";?>
 </body>
 
 </html>

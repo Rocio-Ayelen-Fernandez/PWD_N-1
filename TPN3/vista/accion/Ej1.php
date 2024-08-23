@@ -1,6 +1,6 @@
 <?php
 include_once '../../../utils/funciones.php';
-include_once '../../control/EJ1/Archivo.php';
+include_once '../../control/Archivo.php';
 
 $datos = darDatosSubmitted();
 
@@ -55,7 +55,10 @@ if ($respuesta == 0) {
 		<h2 class="display-2">GRUPO N° 12
 		</h2>
 	</header>
-    <?php echo $mensaje; ?>
+    <?php echo "<p>".$mensaje."</p>"; ?>
+
+    <a href="../Ej1.php">Volver</a>
+
     	<footer class="text-center footer-style">
 		<div class="col-md-12 footer-col">
 			<h3>Integrantes: Russo Florencia, Molina Enzo, Gallardo Gabriel, Fernandez Rocio.</h3>

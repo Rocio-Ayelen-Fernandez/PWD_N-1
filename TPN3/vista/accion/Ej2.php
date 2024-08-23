@@ -1,10 +1,10 @@
 <?php
 include_once '../../../utils/funciones.php';
-include_once '../../control/EJ2/Archivo.php';
+include_once '../../control/ArchivoTXT.php';
 
 $datos = darDatosSubmitted();
 
-$objArchivo = new Archivo();
+$objArchivo = new ArchivoTXT();
 $respuesta = $objArchivo->subirArchivo($datos);
 
 $mensaje = '';
@@ -16,13 +16,11 @@ if ($respuesta == 0) {
     $mensaje .=
         '<p>El archivo ' .
         $datos['miArchivo']['name'] .
-        ' se ha copiado con éxito <br>';
-    // $mensaje .=
-    //     '<a href="' .
-    //     $objArchivo->getDir() .
-    //     $datos['miArchivo']['name'] .
-    //     '">Descargar archivo</a></p>';
-    $mensaje .= '<pre>' . file_get_contents($archivoPath) . '</pre>';
+        " se ha copiado con éxito <br><textarea name='archivo' id='archivo' cols='50' rows='20'>
+".file_get_contents($archivoPath)."
+    </textarea>";
+
+    
 } elseif ($respuesta == -2) {
     $mensaje =
         '<p>Tipo de archivo no permitido. Solo se permiten archivos .txt.</p>';
@@ -44,6 +42,12 @@ if ($respuesta == 0) {
     <title>Document</title>
 </head>
 <body>
-    <?php echo $mensaje; ?>
+    <?php
+        echo $mensaje;
+    ?>
+   
+
+    <a href="../Ej2.php">Volver</a>
+
 </body>
 </html>

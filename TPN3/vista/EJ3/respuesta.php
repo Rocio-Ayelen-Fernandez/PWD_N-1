@@ -1,8 +1,10 @@
 <?php
 include_once '../../../utils/funciones.php';
-include_once '../../control/EJ3/Imagen.php';
+include_once '../../control/Imagen.php';
 
 $datos = darDatosSubmitted();
+
+print_r($datos);
 
 $objImagen = new Imagen();
 $respuesta = $objImagen->subirArchivo($datos, 'thumbnail');

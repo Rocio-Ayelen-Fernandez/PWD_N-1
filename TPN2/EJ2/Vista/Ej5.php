@@ -19,7 +19,7 @@
                 un mensaje que indique el tipo de estudios que posee y su sexo.</p>
         </div>
         <div id="formulario">
-            <form id="datosForm" action="accion/Form5.php" method="get" onSubmit="return Validar();">
+            <form id="datosForm" action="accion/Form5.php" method="post" onSubmit="return Validar();">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" size="15" ><br>
 

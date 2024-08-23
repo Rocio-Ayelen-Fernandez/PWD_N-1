@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio7</title>
+    <title>Ejercicio7</title>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <form id="calculosForm" action="postForm.php" method="post" onSubmit="return Validar();">
+    <form id="calculosForm" action="Accion/Ej7.php" method="post" onSubmit="return Validar();">
 
     <input type="text" id="op1" name="op1">
     <input type="text" id="op2" name="op2">

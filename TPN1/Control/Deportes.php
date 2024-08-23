@@ -6,7 +6,7 @@
 
     public function __construct($datos){
         parent::__construct($datos);
-        $this->deportes = $datos["deportes"];
+        $this->deportes = $datos["deporte"];
     }
     public function getDeportes(){
         return $this->deportes;

@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,20 +18,19 @@ un botón enviar los datos a un script encargado de realizar el cálculo y visua
 Agregar un botón para limpiar el formulario y volver a consultar.
     </p>
 
-
-    <form action="postForm.php" method="post" onSubmit="return Validar();">
-        <label for="edad" name="edad">Ingrese su edad</label>
+    <form action="Accion/Ej8.php" method="post" onSubmit="return Validar();">
+        <label for="edad">Ingrese su edad</label>
         <input type="text" id="edad" name="edad"><br>
-        <label for="edad" name="edad">¿Es estudiante?</label><br>
-        <label for="estudiante" name="estudiante">Si</label>
-        <input type="radio" id="estudiante" name="estudiante" value="si">
-        <label for="noEstudiante" name="estudiante">No</label>
-        <input type="radio" id="estudiante" name="estudiante" value="no">
+        <label>¿Es estudiante?</label><br>
+
+        <label for="siEstudiante">Si</label>
+        <input type="radio" id="siEstudiante" name="estudiante" value="si">
+        <label for="noEstudiante">No</label>
+        <input type="radio" id="noEstudiante" name="estudiante" value="no">
         <br>
         <button type="submit">Enviar</button>
         <button type="reset">Limpiar</button>
     </form>
     <script src="assets/js/ej8.js"></script>
-
 </body>
 </html>

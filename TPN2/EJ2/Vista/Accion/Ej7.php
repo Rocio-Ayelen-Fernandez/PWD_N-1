@@ -1,7 +1,7 @@
 <?php
 
-include_once "../../Control/EJ7/Calculo.php";
-include_once "../../../utils/funciones.php";
+include_once "../../Control/Calculo.php";
+include_once "../../../../utils/funciones.php";
 
 $datos = darDatosSubmitted();
 

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ejer 3 - Login</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" href="/tp2/Vista/css/ejer3Style.css">
+	<link rel="stylesheet" href="assets/css/ejer3Style.css">
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 	<script src="/tp2/Vista/jquery/jquery-3.7.1.min.js"></script>
 
@@ -19,7 +19,7 @@
 			<div class="col-md-4">
 				<div class="login-container">
 					<h2 class="text-center">Iniciar Sesión</h2>
-					<form class="needs-validation" id="loginForm" novalidate method="post" action="Action/ejer3Vol2.php">
+					<form class="needs-validation " id="loginForm" novalidate method="post" action="Action/ejer3Vol2.php">
 						<div class="mb-3">
 							<label for="username" class="form-label"></label>
 							<div class="input-group">

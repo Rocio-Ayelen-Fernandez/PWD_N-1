@@ -21,7 +21,7 @@
 			</div>
 		</header>
 		<div class="contenedorDos">
-			<form class="row g-3 needs-validation" novalidate action="Action\ejer4vol2.php" method="get">
+			<form class="row g-3 needs-validation" novalidate action="Action/ejercicio4.php" method="post">
 				<div class="col-6">
 					<label class="form-label" for="validationCustom01">Titulo</label>
 					<input type="text" class="form-control" id="validationCustom01" name="Titulo" required>

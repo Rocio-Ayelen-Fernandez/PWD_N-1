@@ -13,8 +13,8 @@ private $edad;
         return $this->estudia;
     }
 
-    public function setValorEstudia(){
-        return $this->estudia;
+    public function setValorEstudia($estudia){
+        $this->estudia = $estudia;
     }
 
     public function getEdad(){
@@ -29,15 +29,17 @@ private $edad;
         $estudiante = $this->getValorEstudia();
         $edad = $this->getEdad();
 
-        if ($estudiante || $edad < 12 ) {
-            $costoEntrada = 160;
-        } else if ($estudiante && $edad >= 12) {
+
+        if($estudiante && $edad >= 12){
             $costoEntrada = 180;
-        } else {
+        }else if($estudiante || $edad < 12 ){
+            $costoEntrada = 160;
+        }else{
             $costoEntrada = 300;
         }
         return $costoEntrada;
     }
+
 
     
 

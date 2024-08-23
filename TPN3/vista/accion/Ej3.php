@@ -2,10 +2,30 @@
 
 include_once "../../../utils/funciones.php";
 include_once "../../Control/Pelicula.php";
+include_once "../../Control/Imagen.php";
 
 $datos = darDatosSubmitted();
 
+
 $pelicula = new Pelicula($datos);
+$objImagen = new Imagen();
+
+$respuesta = $objImagen->subirArchivo($datos,"thumbnail");
+
+if ($respuesta > 0) {
+	$img = "<img class='card-img-top' src= '../../archivos/" .$datos['thumbnail']['name'] .
+		"' alt='" .	$datos['thumbnail']['name'] .
+		"'  >";
+} else {
+	$img='<p>No se pudo subir la imagen.</p>';
+ }  
+
+ 
+ /*<div class='card' style='width: 18rem;'>
+$img = "<img src= '../../archivos/" .$datos['thumbnail']['name'] .
+		"' alt='" .	$datos['thumbnail']['name'] .
+		"'  >";*/
+
 
 
 /**include_once '../../Control/Pelicula.php';*/
@@ -32,7 +52,7 @@ $pelicula= new Pelicula($datos);
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ejer 4 - vol 2</title>
 	<link rel="stylesheet" href="../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../assets/css/ejer4vol2.css">
+	<link rel="stylesheet" href="../assets/css/ejer4vol2.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -49,7 +69,11 @@ $pelicula= new Pelicula($datos);
 
 		</header>
 		<div class="cuerpo-Info">
-			<?php echo $mensaje; ?>
+			<?php echo $mensaje;?>
+
+			<div class='card' style="width: 12rem; " >
+ 				<?php echo $img; ?>
+			</div>
 		</div>
 	</div>
 

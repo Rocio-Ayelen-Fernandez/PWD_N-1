@@ -21,12 +21,12 @@ Agregar un botón para limpiar el formulario y volver a consultar.
 
     <form action="Accion/Ej8.php" method="post">
         <label for="edad" name="edad">Ingrese su edad</label>
-        <input type="text" id="edad" name="edad"><br>
+        <input type="number" id="edad" name="edad" required><br>
         <label for="edad" name="edad">¿Es estudiante?</label><br>
         <label for="estudiante" name="estudiante">Si</label>
-        <input type="radio" id="estudiante" name="estudiante" value="si">
+        <input type="radio" id="estudiante" name="estudiante" value="si" required >
         <label for="noEstudiante" name="estudiante">No</label>
-        <input type="radio" id="estudiante" name="estudiante" value="no">
+        <input type="radio" id="estudiante" name="estudiante" value="no" required>
         <br>
         <button type="submit">Enviar</button>
         <button type="reset">Limpiar</button>

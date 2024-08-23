@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div id="contenedor">
@@ -15,18 +16,18 @@ deportes que practica (futbol, basket, tennis, voley) un alumno. Mostrar en la p
 que procesa el formulario la cantidad de deportes que practica.</p>
         </div>
         <div id="formulario">
-            <form id="datosForm" action="postForm.php" method="post" onSubmit="return Validar();">
+            <form id="datosForm" action="Accion/Form6.php" method="post" onSubmit="return Validar();">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" size="15" required><br>
+                <input type="text" id="nombre" name="nombre" size="15" ><br>
 
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" size="15" required><br>
+                <input type="text" id="apellido" name="apellido" size="15" ><br>
 
                 <label for="edad">Edad</label>
-                <input type="text" id="edad" name="edad" size="15" required><br>
+                <input type="text" id="edad" name="edad" size="15" ><br>
 
                 <label for="direccion">Direccion</label>
-                <input type="text" id="direccion" name="direccion" size="15" required><br>
+                <input type="text" id="direccion" name="direccion" size="15" ><br>
 
                 <label for="estudios">Estudios</label><br>
                 No tiene estudios
@@ -36,8 +37,8 @@ que procesa el formulario la cantidad de deportes que practica.</p>
                 Estudios Secundarios
                 <input type="radio" id="secundarios" name="estudios" value="secundarios"><br>
 
-                <label for="sexo">Sexo</label>
-                <select name="sexo" id="sexo">
+                <label for="genero">Genero</label>
+                <select name="genero" id="genero">
                     <option value="Hombre">Hombre</option>
                     <option value="Mujer">Mujer</option>
                     <option value="x">X</option>
@@ -45,13 +46,13 @@ que procesa el formulario la cantidad de deportes que practica.</p>
 
                 <label for="estudios">Deportes<br>Seleccione todos los que apliquen</label><br>
                 Futbol
-                <input type="checkbox" id="Futbol" name="deporte[]" value="Futbol">
+                <input type="checkbox" id="Futbol" name="deportes[]" value="Futbol">
                 Basket
-                <input type="checkbox" id="Basket" name="deporte[]" value="Basket">
+                <input type="checkbox" id="Basket" name="deportes[]" value="Basket">
                 Tenis
-                <input type="checkbox" id="Tenis" name="deporte[]" value="Tenis">
+                <input type="checkbox" id="Tenis" name="deportes[]" value="Tenis">
                 Voley
-                <input type="checkbox" id="Voley" name="deporte[]" value="Voley">
+                <input type="checkbox" id="Voley" name="deportes[]" value="Voley">
                 
                 <button type="submit">Enviar</button>
             </form>

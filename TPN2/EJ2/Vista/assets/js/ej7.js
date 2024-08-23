@@ -1,4 +1,4 @@
-function Validar(event){ 
+function Validar(){ 
     let isValid = true;
 
     $('#calculosForm input[type="text"]').each(function() {
@@ -13,9 +13,6 @@ function Validar(event){
         alert('Por favor, seleccione un número válido.');
     }
 
-    if(!isValid){
-        event.preventDefault();
-    }
 
     return isValid;
 }

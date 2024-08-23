@@ -4,9 +4,9 @@ function Validar(event){
     const apellido = $("#apellido").val();
     const edad = $("#edad").val();
     const direccion = $("#direccion").val();
-    if($nombre === "" || $apellido === "" || $edad === "" || $direccion === "" || isNaN($edad)){
+    if(nombre === "" || apellido === "" || edad === "" || direccion === "" || isNaN(edad)){
         alert("Por favor, ingrese un valor válido");
-        e.preventDefault();
+        
         isValid=false;
     }
     $('#datosForm input[type="text"]').each(function() {
@@ -15,10 +15,9 @@ function Validar(event){
             alert('Por favor, complete todos los campos de texto.');
         }
     });
-    if ($('input[name="deportes[]"]:checked').length == 0) {
+    if ((!$('input[name="deportes[]"]:checked').length)) {
         alert("Por favor selecciona al menos un deporte.");
         isValid= false;
-        return false;
     }
     if (!$('input[name="estudios"]:checked').val()) {
         isValid = false;

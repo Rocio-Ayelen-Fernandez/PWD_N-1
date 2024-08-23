@@ -1,12 +1,12 @@
 <?php
 
-class Archivo
+class ArchivoTXT
 {
     private $dir;
 
     public function __construct()
     {
-        $this->dir = '../../vista/EJ1/archivos/';
+        $this->dir = '../../archivos/';
     }
 
     public function getDir()
@@ -26,7 +26,7 @@ class Archivo
         // echo 'Ruta completa: ' . $dir . '<br>';
 
         $archivo = $array['miArchivo'];
-        $tipoPermitido = ['application/msword', 'application/pdf'];
+        $tipoPermitido = ['text/plain'];
         $tamanoMaximo = 2 * 1024 * 1024; // 2MB en bytes
 
         // Verificar si el archivo tiene un tipo permitido
