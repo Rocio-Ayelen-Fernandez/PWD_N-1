@@ -2,6 +2,8 @@
 
 include_once '../../utils/funciones.php';
 $datos = darDatosSubmitted();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

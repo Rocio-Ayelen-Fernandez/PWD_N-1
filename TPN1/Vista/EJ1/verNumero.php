@@ -1,6 +1,6 @@
 <?php
 
-include_once '../../utils/funciones.php';
+include_once '../../../utils/funciones.php';
 include_once '../../Control/EJ1/signo.php';
 
 $datos = darDatosSubmitted();

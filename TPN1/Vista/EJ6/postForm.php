@@ -1,6 +1,7 @@
 <?php
 
 include_once '../../../utils/funciones.php';
+//include_once '../../Control/EJ4/verificarEdad.php';
 $datos = darDatosSubmitted();
 
 $mensaje = "";
@@ -16,7 +17,6 @@ foreach( $datos as $dato => $valor ){
         $mensaje .= "</p>";
     }
 }
-
 
 ?>
 <!DOCTYPE html>

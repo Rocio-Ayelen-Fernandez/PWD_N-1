@@ -9,7 +9,7 @@
 <body>
     <form action="verNumero.php" method="get">
         <label for="numero">Ingrese un numero:</label>
-        <input type="number" id="numero" name="numero" required>
+        <input type="number" step="0.01" id="numero" name="numero" required>
         <button type="submit">Enviar</button>
     </form>    
 </body>

@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="../../Control/EJ2/verHoras.php" method="get">
+    <form action="resultado.php" method="post">
         <label for="lunes">Lunes:</label>
         <input type="number" id="lunes" name="horas[lunes]" min="0" size="5">
 

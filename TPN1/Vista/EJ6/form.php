@@ -10,11 +10,9 @@
 <body>
     <div id="contenedor">
         <div id="consigna">
-            <p>Modificar el formulario del ejercicio anterior solicitando, tal que usando componentes
-                “radios buttons” se ingrese el nivel de estudio de la persona: 1-no tiene estudios, 2-
-                estudios primarios, 3-estudios secundarios. Agregar el componente que crea más
-                apropiado para solicitar el sexo. En la página que procesa el formulario mostrar además
-                un mensaje que indique el tipo de estudios que posee y su sexo.</p>
+            <p>Modificar el formulario del ejercicio anterior para que permita seleccionar los diferentes
+deportes que practica (futbol, basket, tennis, voley) un alumno. Mostrar en la página
+que procesa el formulario la cantidad de deportes que practica.</p>
         </div>
         <div id="formulario">
             <form action="postForm.php" method="post">
@@ -45,6 +43,16 @@
                     <option value="x">X</option>
                 </select> <br><br>
 
+                <label for="estudios">Deportes<br>Seleccione todos los que apliquen</label><br>
+                Futbol
+                <input type="checkbox" id="Futbol" name="deporte[]" value="Futbol">
+                Basket
+                <input type="checkbox" id="Basket" name="deporte[]" value="Basket">
+                Tenis
+                <input type="checkbox" id="Tenis" name="deporte[]" value="Tenis">
+                Voley
+                <input type="checkbox" id="Voley" name="deporte[]" value="Voley">
+                
                 <button type="submit">Enviar</button>
             </form>
         </div>
