@@ -21,7 +21,8 @@ $(document).ready(function() {
 
         if (error > 0) {
             e.preventDefault();
-            $('#mensajePass').html(mensaje).show();  // Usamos show() en lugar de css('display', 'block')
+            // Usamos show() en lugar de css('display', 'block')
+            $('#mensajePass').html(mensaje).show();  
         }
     });
 });
