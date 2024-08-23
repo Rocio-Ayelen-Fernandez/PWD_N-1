@@ -6,9 +6,6 @@ body {
   width: 100%;
   background: lightgray;
 }
-img {
-  max-width: 100%;
-}
 #contenedor {
   background-color: #d1f5c3;
   box-shadow: 10px 10px darkgray;
@@ -28,13 +25,4 @@ img {
 }
 .respuesta p {
   margin: 1vh;
-}
-.poster {
-  margin-right: 5vh;
-}
-.poster img {
-  width: 100%;
-  height: auto;
-  box-shadow: 5px 5px darkgray;
-  border-radius: 2vh;
 }

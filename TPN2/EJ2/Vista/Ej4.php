@@ -21,35 +21,23 @@
         <div id="formulario">
             <form action="accion/Ej4.php" method="post" onSubmit="return Validar();">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" size="15" required><br>
+                <input type="text" id="nombre" name="nombre" size="15"><br>
 
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" size="15" required><br>
+                <input type="text" id="apellido" name="apellido" size="15"><br>
 
                 <label for="edad">Edad</label>
-                <input type="text" id="edad" name="edad" size="15" required><br>
+                <input type="text" id="edad" name="edad" size="15"><br>
 
                 <label for="direccion">Direccion</label>
-                <input type="text" id="direccion" name="direccion" size="15" required><br>
+                <input type="text" id="direccion" name="direccion" size="15"><br>
 
                 <button type="submit">Enviar</button>
             </form>
         </div>
 
     </div>
-    <script>
-   function Validar(){ 
-                let isValid = true;
-                const nombre = $("#nombre").val();
-                const apellido = $("#apellido").val();
-                const edad = $("#edad").val();
-                const direccion = $("#direccion").val();
-                if(nombre === "" || apellido === "" || edad === "" || direccion === "" || isNaN(edad)){
-                    alert("Por favor, ingrese un valor válido");
-                    isValid=false
-                }
-                return isValid;
-            }
-    </script>
+   
+    <script src="assets/js/ej3y4.js"></script>
 </body>
 </html>

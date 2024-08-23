@@ -8,7 +8,7 @@ $datos = darDatosSubmitted();
 $persona = new Persona($datos);
 $mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido().".Tengo ". $persona->getEdad(). " y vivo en ". $persona->getDireccion() . "Mi género es ".$persona->getGenero(). " y mi nivel de estudios es ". $persona->getEstudios();
 
-
+echo ""
 
 
 
@@ -27,7 +27,7 @@ $mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido()."
         echo $mensaje;
         ?>
 
-        <a href="form.php">Volver</a>
+        <a href="../Ej5.php">Volver</a>
 
     </body>
 

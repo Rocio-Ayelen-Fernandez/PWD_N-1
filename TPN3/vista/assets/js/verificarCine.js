@@ -1,13 +1,9 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
 
     $('form').on('submit', function(e) {
         let anio = $('#anio').val();
         let duracion = $('#duracion').val();
         let error = 0;
-
-        let fileInput = $('#thumbnail');
-        let file = fileInput[0].files[0];
-        let allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
 
         // Limpiar mensajes anteriores
         $('.mensaje').html('');
@@ -32,17 +28,6 @@ $(document).ready(function() {
             }
         });
 
-        
-        // Validar que se haya seleccionado un archivo de imagen
-        if (!file) {
-            fileInput.next('.mensaje').html('Debe seleccionar un archivo de imagen.');
-            error++;
-        } else if (!allowedTypes.includes(file.type)) {
-            fileInput.next('.mensaje').html('El archivo debe ser una imagen (JPEG, PNG, GIF).');
-            error++;
-        }
-
-
         // Mostrar errores si los hay
         if (error > 0) {
             e.preventDefault();
@@ -54,3 +39,7 @@ $(document).ready(function() {
         $('.mensaje').html('');
     });
 });
+ */
+
+// Validacion con Bootstrap
+	

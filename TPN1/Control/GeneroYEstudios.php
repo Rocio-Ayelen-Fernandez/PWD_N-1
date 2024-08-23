@@ -8,7 +8,7 @@
 
     public function __construct($datos){
         parent::__construct($datos);
-        $this->genero = $datos["sexo"];
+        $this->genero = $datos["genero"];
         $this->estudios = $datos["estudios"];
     }
 

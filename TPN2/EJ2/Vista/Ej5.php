@@ -19,29 +19,29 @@
                 un mensaje que indique el tipo de estudios que posee y su sexo.</p>
         </div>
         <div id="formulario">
-            <form id="datosForm" action="accion/Form5.php" method="post" onSubmit="return Validar();">
+            <form id="datosForm" action="accion/Form5.php" method="get" onSubmit="return Validar();">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" size="15" required><br>
+                <input type="text" id="nombre" name="nombre" size="15" ><br>
 
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" size="15" required><br>
+                <input type="text" id="apellido" name="apellido" size="15" ><br>
 
                 <label for="edad">Edad</label>
-                <input type="text" id="edad" name="edad" size="15" required><br>
+                <input type="text" id="edad" name="edad" size="15" ><br>
 
                 <label for="direccion">Direccion</label>
-                <input type="text" id="direccion" name="direccion" size="15" required><br>
+                <input type="text" id="direccion" name="direccion" size="15" ><br>
 
                 <label for="estudios">Estudios</label><br>
                 No tiene estudios
-                <input type="radio" id="sinEstudios" name="estudios" value="sinEstudios"><br>
+                <input type="radio" id="estudios" name="estudios" value="sinEstudios"><br>
                 Estudios Primarios
-                <input type="radio" id="primarios" name="estudios" value="primarios"><br>
+                <input type="radio" id="estudios" name="estudios" value="primarios"><br>
                 Estudios Secundarios
-                <input type="radio" id="secundarios" name="estudios" value="secundarios"><br>
+                <input type="radio" id="estudios" name="estudios" value="secundarios"><br>
 
-                <label for="sexo">Sexo</label>
-                <select name="sexo" id="sexo">
+                <label for="genero">Genero</label>
+                <select name="genero" id="genero">
                     <option value="Hombre">Hombre</option>
                     <option value="Mujer">Mujer</option>
                     <option value="x">X</option>
@@ -51,39 +51,7 @@
             </form>
         </div>
     </div>
-    <script>
-   function Validar(){ 
-
-                var isValid = true;
-                const nombre = $("#nombre").val();
-                const apellido = $("#apellido").val();
-                const edad = $("#edad").val();
-                const direccion = $("#direccion").val();
-                if($nombre === "" || $apellido === "" || $edad === "" || $direccion === "" || isNaN($edad)){
-                    alert("Por favor, ingrese un valor válido");
-                    e.preventDefault();
-                    isValid=false
-                }
-                $('#datosForm input[type="text"]').each(function() {
-                    if ($(this).val().trim() === '') {
-                        isValid = false;
-                        alert('Por favor, complete todos los campos de texto.');
-                    } 
-                });
-
-                if (!$('input[name="estudios"]:checked').val()) {
-                    isValid = false;
-                    alert('Por favor, seleccione su nivel de estudios.');
-                }
-
-                if ($('#sexo').val() === '') {
-                    isValid = false;
-                    alert('Por favor, seleccione su sexo.');
-                }
-
-               
-                return isValid;
-            }
-    </script>
+    <script src="assets/js/ej5.js"></script>
+  
 </body>
 </html>

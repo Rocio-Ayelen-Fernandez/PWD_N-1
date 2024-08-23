@@ -30,19 +30,7 @@ Agregar un botón para limpiar el formulario y volver a consultar.
         <button type="submit">Enviar</button>
         <button type="reset">Limpiar</button>
     </form>
-    <script>
-        function Validar() {
-                let isValid = true;
-               if( $("#edad").val() === "" || isNaN( $("#edad").val())){
-                    isValid= false;
-               }
-               if(!$('input[name="estudios"]:checked').val()){
-                isValid = false;
-                    alert('Por favor, seleccione si es o no estudiante.');
-               }
-           
-            return isValid;
-            }
-    </script>
+    <script src="assets/js/ej8.js"></script>
+
 </body>
 </html>

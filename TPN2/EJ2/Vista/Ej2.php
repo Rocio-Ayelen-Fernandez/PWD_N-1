@@ -25,19 +25,8 @@
         <input type="number" id="viernes" name="horas[viernes]" min="0" size="5">
         <button type="submit">Enviar</button>
     </form> 
-    <script>
-     function Validar() {
-    var isValid = true;
-    $('input[type="number"]').each(function() {
-        var value = $(this).val();
-        if (value === '' || isNaN(value) || value < 0) {
-            alert('Por favor, ingrese un número válido para todos los días.');
-            isValid = false;
-        }
-    });
-    return isValid;
-}
-    </script>   
+    <script src="assets/js/ej2.js"></script>
+
 </body>
 </html>
 
