@@ -9,7 +9,7 @@ $datos = darDatosSubmitted();
 $persona = new Persona($datos);
 
 $deportes = $persona->mostrarDeportes();
-$mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido().".Tengo ". $persona->getEdad(). " y vivo en ". $persona->getDireccion() . "Mi género es ".$this->getGenero(). " y mi nivel de estudios es ". $this->getEstudios(). "Los deportes que practico son ". $deportes."\n";
+$mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido().".<br>Tengo ". $persona->getEdad(). " y vivo en ". $persona->getDireccion() . "<br>Mi género es ".$persona->getGenero(). " y mi nivel de estudios es ". $persona->getEstudios(). "<br>Los deportes que practico son ". $deportes."\n";
 
 
 ?>
@@ -23,7 +23,7 @@ $mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido()."
     <link rel="stylesheet" href="">
 </head>
     <body>
-        <?php echo $mensaje; ?>
+        <?php echo "<p>".$mensaje."</p>"; ?>
 
         <a href="form.php">Volver</a>
 

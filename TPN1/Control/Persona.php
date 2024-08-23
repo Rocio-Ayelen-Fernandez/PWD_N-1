@@ -16,7 +16,7 @@
     $this->direccion = $datos["direccion"];
     $this->genero = $datos["genero"];
     $this->estudios = $datos["estudios"];
-    $this->deportes = $datos["deportes"];
+    $this->deportes = $datos["deporte"];
     }
     
     public function getDeportes(){

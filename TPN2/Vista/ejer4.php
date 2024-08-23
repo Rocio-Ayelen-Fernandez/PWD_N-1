@@ -10,10 +10,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		<script></script>
 	<link rel="stylesheet" href="assets/css/ejer4.css">
+	<link rel="stylesheet" href="assets/js/verificarLogin.js">
 
 	<!-- Enzo -->
 		<link rel="stylesheet" href="/tp2/Vista/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-	<script src="/tp2/Vista/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+	<scrip src="/tp2/Vista/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="/tp2/Vista/css/ejer4.css">
 
 </head>
@@ -64,9 +65,9 @@
 				</div>
 				<div class="col-2">
 					<label class="form-label" for="form-label">Año</label>
-					<input type="number" min="1" max="9999" class="form-control" id="añoInput" name="Anio" required>
+					<input type="number" min="1888" max="9999" class="form-control" id="añoInput" name="Anio" required>
 					<div class="invalid-feedback">
-						Ingrese un valor del 1 al 9999.
+						Ingrese un valor del 1888 al 9999.
 					</div>
 				</div>
 				<div class="col-6">
@@ -135,9 +136,29 @@
 				</div>
 			</form>
 		</div>
-		
+		</div>
 
-		</script>
+<script>
+		(() => {
+				'use strict'
+
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				const forms = document.querySelectorAll('.needs-validation')
+
+				// Loop over them and prevent submission
+				Array.from(forms).forEach(form => {
+					form.addEventListener('submit', event => {
+						if (!form.checkValidity()) {
+							event.preventDefault()
+							event.stopPropagation()
+						}
+
+						form.classList.add('was-validated')
+					}, false)
+				})
+			})()
+
+	</script>
 </body>
 
 </html>

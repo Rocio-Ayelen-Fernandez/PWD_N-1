@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     <div id="contenedor">
@@ -42,9 +44,8 @@
                 const apellido = $("#apellido").val();
                 const edad = $("#edad").val();
                 const direccion = $("#direccion").val();
-                if($nombre === "" || $apellido === "" || $edad === "" || $direccion === "" || isNaN($edad)){
+                if(nombre === "" || apellido === "" || edad === "" || direccion === "" || isNaN(edad)){
                     alert("Por favor, ingrese un valor válido");
-                    e.preventDefault();
                     isValid=false
                 }
                 return isValid;

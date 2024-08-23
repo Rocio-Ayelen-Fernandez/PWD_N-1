@@ -1,6 +1,6 @@
 <?php
 
-include_once '../../utils/funciones.php';
+include_once '../../../../utils/funciones.php';
 include_once '../../Control/Persona.php';
 include_once '../../Control/GeneroYEstudios.php';
 

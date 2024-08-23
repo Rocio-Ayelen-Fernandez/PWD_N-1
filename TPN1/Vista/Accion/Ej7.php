@@ -1,6 +1,6 @@
 <?php
 
-include_once "../../Control/EJ7/Calculo.php";
+include_once "../../Control/Calculo.php";
 include_once "../../../utils/funciones.php";
 
 $datos = darDatosSubmitted();
@@ -21,7 +21,7 @@ $resultado=$objCalculo->devolverCalculo();
 </head>
 <body>
     <?php
-        echo "<p> El resultado de hacer la operación ". $objCalculo->getOperacion()." con ". $objCalculo-> getNumero1() . " y ". $objCalculo-> getNumero2(). "es ". $resultado. "</p>";
+        echo "<p> El resultado de hacer la operación ". $objCalculo->getOperacion()." con ". $objCalculo-> getNumero1() . " y ". $objCalculo-> getNumero2(). " es ". $resultado. "</p>";
     ?>
 </body>
 </html>

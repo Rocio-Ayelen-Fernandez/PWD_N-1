@@ -1,6 +1,6 @@
 <?php
 
-include_once '../../../utils/funciones.php';
+include_once '../../../../utils/funciones.php';
 include_once '../../Control/Persona.php';
 $datos = darDatosSubmitted();
 $persona = new Persona($datos);

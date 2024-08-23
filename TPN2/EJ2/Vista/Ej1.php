@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <form action="accion/Ej1.php" method="get" onSubmit="return Validar();">
         <label for="numero">Ingrese un numero:</label>
-        <input type="number" step="0.01" id="numero" name="numero" required>
+        <input type="text"  id="numero" name="numero" >
         <button type="submit">Enviar</button>
     </form> 
     <script>

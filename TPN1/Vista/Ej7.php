@@ -6,7 +6,7 @@
     <title>Ejercicio7</title>
 </head>
 <body>
-    <form action="postForm.php" method="post">
+    <form action="Accion/Ej7.php" method="post">
 
     <input type="text" id="op1" name="op1">
     <input type="text" id="op2" name="op2">

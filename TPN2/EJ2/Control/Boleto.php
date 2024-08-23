@@ -1,12 +1,13 @@
 
 <?php
 
-class Boleto extends Persona {
+class Boleto{
 private $estudia;
+private $edad;
 
     public function __construct($datos){
-        parent::__construct($datos);
         $this->estudia = $datos['estudiante'] == "si" ? true : false;
+        $this->edad = $datos["edad"];
     }
     public function getValorEstudia(){
         return $this->estudia;
@@ -15,14 +16,24 @@ private $estudia;
     public function setValorEstudia(){
         return $this->estudia;
     }
+
+    public function getEdad(){
+        return $this->edad;
+    }
+    public function setEdad($edad){
+        $this->edad = $edad;
+    }
+
     public function calcularBoleto(){
         $costoEntrada = 0;
         $estudiante = $this->getValorEstudia();
-        if($this->getEdad() >=12 && $estudiante){
-            $costoEntrada = 180;
-        }else if($this->getEdad()< 18 || $estudiante){
+        $edad = $this->getEdad();
+
+        if ($estudiante || $edad < 12 ) {
             $costoEntrada = 160;
-        }else{
+        } else if ($estudiante && $edad >= 12) {
+            $costoEntrada = 180;
+        } else {
             $costoEntrada = 300;
         }
         return $costoEntrada;

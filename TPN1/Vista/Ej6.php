@@ -36,8 +36,8 @@ que procesa el formulario la cantidad de deportes que practica.</p>
                 Estudios Secundarios
                 <input type="radio" id="secundarios" name="estudios" value="secundarios"><br>
 
-                <label for="sexo">Sexo</label>
-                <select name="sexo" id="sexo">
+                <label for="genero">Sexo</label>
+                <select name="genero" id="genero">
                     <option value="Hombre">Hombre</option>
                     <option value="Mujer">Mujer</option>
                     <option value="x">X</option>
