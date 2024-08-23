@@ -1,7 +1,10 @@
 <?php
-include_once "/laragon/www/pwd/tp2/Util/funciones.php";
-include_once "/laragon/www/pwd/tp2/Control/VerificaPass.php";
-$datos = dataSubmitted();
+
+include_once "../../../utils/funciones.php";
+include_once "../../Control/EJ3/VerificarPass.php";
+
+
+$datos = darDatosSubmitted();
 $objVerificarPass = new VerificaPass($datos);
 $boolVerificador = $objVerificarPass->existeUsuario($datos["usuario"], $datos["clave"]);
 $msj = $objVerificarPass->verificarUsuario($datos["usuario"], $datos["clave"]);
@@ -25,7 +28,7 @@ $claseBootAlerta = $boolVerificador ? "alert-success" : "alert-danger";
 				<div class="card">
 					<div class="card-body text-center">
 						<div class="alert <?php echo $claseBootAlerta ?> "><?php echo $msj ?></div>
-						<a href="/tp2/Vista/ejer3.php" class="btn btn-primary mt-4">Volver atrás</a>
+						<a href="../ejer3.php" class="btn btn-primary mt-4">Volver atrás</a>
 					</div>
 				</div>
 			</div>

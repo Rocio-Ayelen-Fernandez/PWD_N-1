@@ -5,6 +5,9 @@ include_once '../../Control/Persona.php';
 include_once '../../Control/Deportes.php';
 //include_once '../../Control/EJ4/verificarEdad.php';
 $datos = darDatosSubmitted();
+
+$persona = new Persona($datos);
+
 $deportes = $persona->mostrarDeportes();
 $mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido().".Tengo ". $persona->getEdad(). " y vivo en ". $persona->getDireccion() . "Mi género es ".$this->getGenero(). " y mi nivel de estudios es ". $this->getEstudios(). "Los deportes que practico son ". $deportes."\n";
 

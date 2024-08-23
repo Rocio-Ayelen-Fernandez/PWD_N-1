@@ -5,7 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ejer 4 - Tp2</title>
-	<link rel="stylesheet" href="/tp2/Vista/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+	<script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script></script>
+	<link rel="stylesheet" href="assets/css/ejer4.css">
+
+	<!-- Enzo -->
+		<link rel="stylesheet" href="/tp2/Vista/bootstrap-5.3.2-dist/css/bootstrap.min.css">
 	<script src="/tp2/Vista/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="/tp2/Vista/css/ejer4.css">
 
@@ -19,7 +26,7 @@
 			</div>
 		</header>
 		<div class="contenedorDos">
-			<form class="row g-3 needs-validation" novalidate action="/tp2/Vista/Action/ejer4vol2.php" method="get">
+			<form class="row g-3 needs-validation" novalidate action="Action\ejer4vol2.php" method="get">
 				<div class="col-6">
 					<label class="form-label" for="validationCustom01">Titulo</label>
 					<input type="text" class="form-control" id="validationCustom01" name="Titulo" required>
@@ -128,27 +135,8 @@
 				</div>
 			</form>
 		</div>
+		
 
-		<script>
-			// Validacion con Bootstrap
-			(() => {
-				'use strict'
-
-				// Fetch all the forms we want to apply custom Bootstrap validation styles to
-				const forms = document.querySelectorAll('.needs-validation')
-
-				// Loop over them and prevent submission
-				Array.from(forms).forEach(form => {
-					form.addEventListener('submit', event => {
-						if (!form.checkValidity()) {
-							event.preventDefault()
-							event.stopPropagation()
-						}
-
-						form.classList.add('was-validated')
-					}, false)
-				})
-			})()
 		</script>
 </body>
 
