@@ -8,9 +8,6 @@ $datos = darDatosSubmitted();
 $persona = new Persona($datos);
 $mensaje = "Hola, yo soy " .$persona->getNombre()." ". $persona->getApellido().".Tengo ". $persona->getEdad(). " y vivo en ". $persona->getDireccion() . "Mi género es ".$persona->getGenero(). " y mi nivel de estudios es ". $persona->getEstudios();
 
-echo ""
-
-
 
 ?>
 <!DOCTYPE html>
